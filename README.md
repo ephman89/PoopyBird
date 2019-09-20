@@ -1,2 +1,1 @@
-# PoopyBird
-Flappy bird but with poop
+# 03_CanvasIntro
