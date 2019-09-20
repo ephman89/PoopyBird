@@ -39,15 +39,13 @@ function handleShipAnimation() {
 
 function RenderNewObject(context) {
     context.fillStyle = 'rgb(200,0,0)';
-    context.fillRect (CUBE.x,CUBE.y,100,100);
+    context.fillRect (200,50,100,100);//create main recatngle
 }
 
 function HandleNewObjectMovement() {
-  if (CUBE.x != GAME.canvas.width - 50){
-    CUBE.x = CUBE.x+1;
-  } else {
-    CUBE.y = CUBE.y+1;
-  }
+    context. fillStyle = 'rgb(100,0,0)';
+    context.fillRect (canvas.width,0,100,300);//create obstacle
+
 }
 
 function runGame() {
