@@ -40,17 +40,22 @@ function handleShipAnimation() {
 function RenderNewObject(context) {
     context.fillStyle = 'rgb(200,0,0)';
     context.fillRect (NEW_OBJECT.x,NEW_OBJECT.y,50,50);//create main recatngle
-    cube2 =  context.fillRect(CUBE.x,CUBE.y,25,25);
+    context.fillRect(CUBE.x, CUBE.y,20, 100);
+    context.fillRect (BOTTOM.x, BOTTOM.y, 20,100);
 
 
 }
-
 function HandleNewObjectMovement() {
   //  context.fillStyle = 'rgb(100,0,0)';
   //  context.fillRect (canvas.width,0,100,300);//create obstacle
-
-  if(CUBE.x >= 50 && CUBE.x< GAME.canvas.width-50){
-    CUBE.x -= 1;
+  CUBE.x-=1;
+  BOTTOM.x-=1;
+  if (NEW_OBJECT.x>GAME.canvas.width) {
+    CUBE.x=0;
+    BOTTOM.x=0;
+  }else if (NEW_OBJECT.y>GAME.canvas.height) {
+    CUBE.y=0;
+    BOTTOM.y=0;
   }
 }
 

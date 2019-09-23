@@ -18,10 +18,15 @@ var SPACE_SHIP = {
 
 var NEW_OBJECT = {
   x : 25,
-  y : 100
+  y : 99
 };
 
 var CUBE = {
-  x:250,
-  y:300,
+  x:580,
+  y:0
 };
+
+var BOTTOM = {
+  x : 580,
+  y : 200
+}
