@@ -17,11 +17,16 @@ var SPACE_SHIP = {
 };
 
 var NEW_OBJECT = {
-  x : 0,
-  y : 0
+  x : 25,
+  y : 99
 };
 
 var CUBE = {
-  x:0,
-  y:0,
+  x:580,
+  y:0
 };
+
+var BOTTOM = {
+  x : 580,
+  y : 200
+}
